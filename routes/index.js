@@ -6,7 +6,7 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 router.get('/something', function(req, res, next) {
-  res.send('Something')
+  res.send(`running on port ${process.pid}`)
 });
 
 module.exports = router;
